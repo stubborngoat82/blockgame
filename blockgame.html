@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Move the Box</title>
+	<style>
+        body{
+            background-color: aqua;
+        }
+        #gamecontainer{
+		position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        height: 800px;
+        background-image: url("./scene_2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+		#image {
+        
+        width: 100px;
+        height: 100px;
+        left: 130px;
+        top: 290px;
+      }
+
+        #endpoint {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			left:360px;
+			top: 690px;
+			position: absolute;
+			opacity: 0.25;
+
+		
+		}
+
+        
+	</style>
+</head>
+<body>
+	
+    <div id="gamecontainer">
+	    <img src="./char_2.png" id="image">
+        <div id="endpoint"></div>
+    
+
+	    <script src="script.js"></script>
+		
+    </div>
+</body>
+</html>
